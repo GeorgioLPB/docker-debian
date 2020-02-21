@@ -1,0 +1,28 @@
+FROM debian:10.2
+#
+# https://hub.docker.com/_/debian
+# https://github.com/just-containers/s6-overlay/releases
+#
+LABEL maintainer georges.gregorio@gmail.com
+
+ENV \
+	s6_release='1.22.1.0' \
+	s6_arch='amd64' \
+	s6_sha256='73f9779203310ddf9c5132546a1978e1a2b05990263b92ed2c34c1e258e2df6c' \
+	s6_url="https://github.com/just-containers/s6-overlay/releases/download"
+
+RUN set -eux; \
+	apt-get update && \
+	apt-get install -y --no-install-recommends \
+		procps wget ca-certificates && \
+	rm -r /var/lib/apt/lists/* && \
+	# S6
+	cd /tmp && \
+	wget -O "./s6-overlay-${s6_arch}.tar.gz" \
+		"${s6_url}/v${s6_release}/s6-overlay-${s6_arch}.tar.gz" && \
+	echo "${s6_sha256} *s6-overlay-${s6_arch}.tar.gz" | sha256sum -c - && \
+	tar -xzvf "/tmp/s6-overlay-${s6_arch}.tar.gz" -C / && \
+	rm -fv "/tmp/s6-overlay-${s6_arch}.tar.gz"
+
+CMD [ "/init" ]
+
