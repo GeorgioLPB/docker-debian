@@ -4,7 +4,7 @@
 
 | Tags         | Debian | s6-overlay |
 |:-------------|:-------|:-----------|
-| `latest`     | `10.5` | `2.0.0.1`  |
+| `latest`     | `10.6` | `2.1.0.0`  |
 
 * [latest, (latest/Dockerfile)](https://github.com/GeorgioLPB/docker-debian/blob/master/Dockerfile.amd64)
 

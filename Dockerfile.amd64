@@ -1,4 +1,4 @@
-FROM debian:10.5
+FROM debian:10.6
 #
 # https://hub.docker.com/_/debian
 # https://github.com/just-containers/s6-overlay/releases
@@ -6,9 +6,9 @@ FROM debian:10.5
 LABEL maintainer georges.gregorio@gmail.com
 
 ENV \
-	s6_release='2.0.0.1' \
+	s6_release='2.1.0.0' \
 	s6_arch='amd64' \
-	s6_sha256='df235428444be7737caf363e5dcfb58e3022fa611f5a27fe309ecd6fc1755cda' \
+	s6_sha256='710ef7d4089814816459b726c38eb2f0112b69ea4f1760485966ad968add0573' \
 	s6_url="https://github.com/just-containers/s6-overlay/releases/download"
 
 RUN set -eux; \
