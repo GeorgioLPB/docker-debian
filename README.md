@@ -6,7 +6,7 @@
 |:-------------|:-------|:-----------|
 | `latest`     | `10.6` | `2.1.0.2`  |
 
-* [latest, (latest/Dockerfile)](https://github.com/GeorgioLPB/docker-debian/blob/master/Dockerfile.amd64)
+* [latest, (latest/Dockerfile)](https://github.com/GeorgioLPB/docker-debian/blob/master/Dockerfile)
 
 ## Quick reference
 
