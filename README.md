@@ -2,9 +2,9 @@
 
 ## Supported tags and respective `Dockerfile` links
 
-| Tags         | Debian | s6-overlay |
-|:-------------|:-------|:-----------|
-| `latest`     | `10.8` | `2.2.0.3`  |
+| Tags         | Debian  | s6-overlay |
+|:-------------|:--------|:-----------|
+| `latest`     | `10.10` | `2.2.0.3`  |
 
 * [latest, (latest/Dockerfile)](https://github.com/GeorgioLPB/docker-debian/blob/master/Dockerfile)
 

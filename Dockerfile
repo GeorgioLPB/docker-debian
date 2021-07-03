@@ -1,4 +1,4 @@
-FROM debian:10.9
+FROM debian:10.10
 #
 # https://hub.docker.com/_/debian
 # https://github.com/just-containers/s6-overlay/releases
